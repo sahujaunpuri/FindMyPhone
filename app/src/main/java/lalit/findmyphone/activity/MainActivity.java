@@ -1,4 +1,4 @@
-package lalit.findmyphone;
+package lalit.findmyphone.activity;
 
 import android.Manifest;
 import android.content.BroadcastReceiver;
@@ -18,6 +18,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import lalit.findmyphone.DbHelper;
+import lalit.findmyphone.R;
 import lalit.findmyphone.model.Result;
 
 public class MainActivity extends AppCompatActivity {
@@ -97,21 +99,4 @@ public class MainActivity extends AppCompatActivity {
         return contacts;
     }
 
-    @Override
-    public void onResume() {
-        registerReceiver(mReceiverLocation, new IntentFilter());
-        super.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        unregisterReceiver(mReceiverLocation);
-        super.onPause();
-    }
-
-    private BroadcastReceiver mReceiverLocation = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-        }
-    };
 }

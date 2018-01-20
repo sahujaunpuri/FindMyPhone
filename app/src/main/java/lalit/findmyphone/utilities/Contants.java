@@ -37,6 +37,7 @@ public class Contants {
     public static final String Dont_SEND_MESSAGE = "OTP Do Not Send Successfully";
     public static final String No_DATA_FOUND_MESSAGE = "No Record Found";
     public static final String UploadUserNamePhone = "findmyphoneapis/UploadFindMyPhoneData.php";
+    public static final String FetchfindMyPhoneData = "findmyphoneapis/FetchfindMyPhoneData.php";
     public static final String GetAllCategoryByStrore = "Category/GetAllCategoryByMenuId";
     public static final String GetAllProductByCategory = "Product/GetAllProductByCategory";
 

@@ -25,7 +25,7 @@ public class ServiceCaller {
     //call user data
     public void callUserService(String phone, final IAsyncWorkCompletedCallback workCompletedCallback) {
 
-        final String url = Contants.SERVICE_BASE_URL + Contants.UploadUserNamePhone;
+        final String url = Contants.SERVICE_BASE_URL + Contants.FetchfindMyPhoneData;
         JSONObject obj = new JSONObject();
         try {
             obj.put("PhoneNumber", phone);

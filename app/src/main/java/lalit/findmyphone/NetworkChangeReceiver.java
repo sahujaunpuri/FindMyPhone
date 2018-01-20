@@ -35,31 +35,9 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
 
     public void isNetworkAvailable(Context context) {
         if (isOnline(context)) {
-            final DbHelper dbHelper = new DbHelper(context);
-            final Result result = dbHelper.getUserData();
-            StringRequest stringRequest = new StringRequest(Request.Method.POST, Contants.SERVICE_BASE_URL + Contants.UploadUserNamePhone,
-                    new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            dbHelper.deleteUserData();
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                        }
-                    }) {
-                @Override
-                protected Map<String, String> getParams() throws AuthFailureError {
-                    Map<String, String> params = new HashMap<String, String>();
-                    params.put("UserName", result.getUserName());
-                    params.put("PhoneNumber", result.getPhoneNumber());
-                    return params;
-                }
-            };
-            RequestQueue requestQueue = Volley.newRequestQueue(context);
-            requestQueue.add(stringRequest);
-
+            Intent intent = new Intent("action");
+            intent.putExtra("flag", true);
+            context.sendBroadcast(intent);
         }
     }
 
