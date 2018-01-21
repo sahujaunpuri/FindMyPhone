@@ -38,7 +38,8 @@ public class ServiceCaller {
             @Override
             public void onDone(String doneWhatCode, String result, String error) {
                 if (result != null) {
-                    parseAndSaveLoginData(result, workCompletedCallback);
+                    workCompletedCallback.onDone(result, true);
+                    //parseAndSaveLoginData(result, workCompletedCallback);
                 } else {
                     workCompletedCallback.onDone("callUserService done", false);
                 }

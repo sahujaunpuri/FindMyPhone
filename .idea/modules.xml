@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FindMyPhone.iml" filepath="$PROJECT_DIR$/.idea/FindMyPhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FindMyPhone.iml" filepath="$PROJECT_DIR$/.idea/FindMyPhone.iml" />
       <module fileurl="file://D:\FindMyPhone\FindMyPhone.iml" filepath="D:\FindMyPhone\FindMyPhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\FindMyPhone\app\app.iml" filepath="D:\FindMyPhone\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
